@@ -182,8 +182,8 @@ int multiplyTwoValuesTogether(int firstNumber,int secondNumber);
 ```
 
 ## OUTPUT
-![]([1.png](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(16).png))
-![]([2.png](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(17).png))
+![](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(16).png)
+![](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(17).png)
 
 
 
