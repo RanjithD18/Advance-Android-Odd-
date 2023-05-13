@@ -29,8 +29,8 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the client/server services using AIDL”.
-Developed by:MANOJ CHOUDHARY V
-Registeration Number :212221240025
+Developed by:Ranjith D
+Registeration Number :212221240044
 */
 ```
 ## MainActivity.java
@@ -182,9 +182,8 @@ int multiplyTwoValuesTogether(int firstNumber,int secondNumber);
 ```
 
 ## OUTPUT
-![](1.png)
-![](2.png)
-![](4.png)
+![]([1.png](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(16).png))
+![]([2.png](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/CSAIDL/Screenshot%20(17).png))
 
 
 
