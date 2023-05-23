@@ -29,13 +29,67 @@ Step 7: Save and run the application.
 ```
 /*
 Program to print the avaliable sensor in android mobile devices”.
-Developed by:
-Registeration Number :
+Developed by:Ranjith D
+Registeration Number :212221240044
 */
 ```
+### MainActivity.java:
+~~~
+package com.example.sensor;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+    private SensorManager mgr;
+    private TextView txtList;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mgr = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+        txtList = (TextView)findViewById(R.id.sensorslist);
+        List<Sensor> sensorList = mgr.getSensorList(Sensor.TYPE_ALL);
+        StringBuilder strBuilder = new StringBuilder();
+        for(Sensor s: sensorList){
+            strBuilder.append(s.getName()+"\n");
+        }
+        txtList.setVisibility(View.VISIBLE);
+        txtList.setText(strBuilder);
+    }
+}
+~~~
+### activity_main.xml:
+~~~
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:id="@+id/sensorslist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Sensors"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
+~~~
 ## OUTPUT
-
+![](https://github.com/RanjithD18/Advance-Android-Odd-/blob/main/Sensor/Screenshot%20(31).png)
 
 
 
